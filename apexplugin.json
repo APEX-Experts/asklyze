@@ -13,7 +13,7 @@
   "author": {
     "name": "APEX Experts AI Solutions",
     "email": "admin@apexexperts.net",
-    "url": "https://github.com/APEX-Experts"
+    "url": "https://asklyze.ai"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,7 @@
     "apex": {
       "versions": ["22.1", "22.2", "23.1", "23.2", "24.1", "24.2"],
       "plugin": {
-        "internalName": "COM.ASKLYZE.REGION",
+        "internalName": "ASKLYZE_AI_PLUGIN",
         "type": "region",
         "demo": "https://asklyze.ai",
         "previewImage": "https://imagedelivery.net/lTxZgYILFzqBTIG5m0i9uA/12df97f6-7e0c-4f54-1c77-11d797fe2100/public"
