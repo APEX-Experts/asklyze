@@ -1,0 +1,34 @@
+{
+  "name": "Asklyze",
+  "version": "1.0.0",
+  "description": "Asklyze is a commercial Oracle APEX region plug-in that brings AI-powered insights, natural language analytics, and interactive data experiences directly into APEX applications.",
+  "keywords": ["asklyze", "ai", "oracle apex", "region", "plugin", "analytics"],
+  "homepage": "https://asklyze.ai",
+  "bugs": {
+    "url": "https://github.com/APEX-Experts/asklyze/issues",
+    "email": "support@asklyze.ai"
+  },
+  "license": "Commercial",
+  "commercial": "Yes",
+  "author": {
+    "name": "APEX Experts AI Solutions",
+    "email": "admin@apexexperts.net",
+    "url": "https://github.com/APEX-Experts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/APEX-Experts/asklyze.git"
+  },
+  "oracle": {
+    "versions": ["19c", "23ai"],
+    "apex": {
+      "versions": ["22.1", "22.2", "23.1", "23.2", "24.1", "24.2"],
+      "plugin": {
+        "internalName": "COM.ASKLYZE.REGION",
+        "type": "region",
+        "demo": "https://asklyze.ai",
+        "previewImage": "https://raw.githubusercontent.com/APEX-Experts/asklyze/main/assets/preview.png"
+      }
+    }
+  }
+}
