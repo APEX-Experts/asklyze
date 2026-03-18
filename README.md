@@ -1,208 +1,248 @@
-# ASKLYZE
-
 <p align="center">
   <img src="https://imagedelivery.net/lTxZgYILFzqBTIG5m0i9uA/2abe72ea-dac2-4992-2644-910c5ca84500/public"
        alt="ASKLYZE Logo"
        width="220">
 </p>
 
-<p align="center"><strong>Transform Oracle APEX into an AI-powered analytics experience.</strong></p>
+<h2 align="center">Transform Oracle APEX into an AI-powered analytics experience.</h2>
+
+<p align="center">
+  <a href="https://asklyze.ai"><img src="https://img.shields.io/badge/Website-asklyze.ai-0066FF?style=flat-square&logo=globe&logoColor=white" alt="Website"></a>
+  <a href="https://github.com/APEX-Experts/asklyze/releases"><img src="https://img.shields.io/github/v/release/APEX-Experts/asklyze?style=flat-square&color=0066FF&label=Latest%20Release" alt="Latest Release"></a>
+  <a href="https://github.com/APEX-Experts/asklyze/issues"><img src="https://img.shields.io/github/issues/APEX-Experts/asklyze?style=flat-square&color=orange" alt="Issues"></a>
+  <a href="mailto:support@asklyze.ai"><img src="https://img.shields.io/badge/Support-support%40asklyze.ai-green?style=flat-square&logo=mail&logoColor=white" alt="Support"></a>
+  <img src="https://img.shields.io/badge/Oracle%20APEX-Compatible-red?style=flat-square&logo=oracle&logoColor=white" alt="Oracle APEX">
+</p>
+
+<br>
 
 <p align="center">
   <a href="https://customer-nd6eq88q2tb3xwgl.cloudflarestream.com/6751079fa304be597c3140e0ed900d9a/iframe?preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-nd6eq88q2tb3xwgl.cloudflarestream.com%2F6751079fa304be597c3140e0ed900d9a%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false">
     <img src="https://customer-nd6eq88q2tb3xwgl.cloudflarestream.com/6751079fa304be597c3140e0ed900d9a/thumbnails/thumbnail.jpg?height=600"
-         alt="ASKLYZE Demo Video"
-         width="900">
+         alt="▶ Watch the ASKLYZE Demo"
+         width="900"
+         style="border-radius:12px;">
   </a>
+  <br>
+  <sub>▶ Click to watch the demo</sub>
 </p>
-**Transform Oracle APEX into an AI-powered analytics experience.**
-
-ASKLYZE is a commercial Oracle APEX region plug-in that brings natural language analytics and AI-powered data exploration into Oracle APEX applications, while keeping customer data inside their own environment.
-
-- Product Website: https://asklyze.ai
-- Support: support@asklyze.ai
-- Issues: https://github.com/APEX-Experts/asklyze/issues
 
 ---
 
-## Overview
+## What is ASKLYZE?
 
-ASKLYZE allows Oracle APEX developers to embed an AI analytics experience directly inside an APEX page using a region plug-in. After installation, customers can configure their API key, connect the plug-in, choose the schemas and tables that ASKLYZE can access, and start using ASKLYZE inside their application.
+**ASKLYZE** is a commercial Oracle APEX region plug-in that brings natural language analytics and AI-powered data exploration directly into your Oracle APEX applications — with **zero data movement**.
 
-This repository contains the installation files required for customer deployment.
+Instead of exporting data to an external BI tool, ASKLYZE embeds inside your existing APEX environment. Your users ask questions in plain English (or Arabic), and ASKLYZE generates SQL, executes it against your own database, and returns interactive dashboards — all without your data ever leaving your infrastructure.
+
+- 🌐 **Product Website:** [asklyze.ai](https://asklyze.ai)  
+- 📧 **Support:** [support@asklyze.ai](mailto:support@asklyze.ai)  
+- 🐛 **Issues:** [github.com/APEX-Experts/asklyze/issues](https://github.com/APEX-Experts/asklyze/issues)
 
 ---
 
-## What is included
+## Key Features
 
-After extracting the installation package, the following folders are available:
+| Feature | Description |
+|---|---|
+| 🗣️ **Natural Language to SQL** | Ask questions in plain English — ASKLYZE generates and executes the SQL automatically |
+| 📊 **AI-Generated Dashboards** | Instantly renders interactive charts and reports from query results |
+| 🔒 **Zero Data Movement** | Your data never leaves your Oracle environment — queries run locally |
+| 🛡️ **Whitelisted Schema Security** | You control exactly which schemas and tables ASKLYZE can access |
+| 🔌 **Native APEX Integration** | Delivered as a standard region plug-in — no external apps, no iframes, no complex setup |
+| 🌍 **Bilingual Support** | Supports English and Arabic interfaces out of the box |
+| ⚡ **No ETL Required** | Works directly against your live Oracle database with no data pipeline |
 
-```text
-/database
-  install.sql
-  deinstall.sql
-  tables.sql
-  asklyze_cloud_connector_pkg.plb
-  asklyze_ui_pkg.sql
+---
 
-/plugin
-  region_type_plugin_asklyze_ai_plugin.sql
+## How It Works
+
+```
+User asks a question in natural language
+        │
+        ▼
+ASKLYZE sends the question + your whitelisted schema metadata to the AI
+        │
+        ▼
+AI generates a SQL query (only against your approved tables)
+        │
+        ▼
+Query executes inside YOUR Oracle database
+        │
+        ▼
+Results are returned and rendered as an interactive dashboard inside APEX
 ```
 
-### Database installation files
-
-The `database` folder contains the scripts required to install the ASKLYZE database objects.
-
-Main files:
-
-- `install.sql` – runs the installation scripts in the correct order
-- `deinstall.sql` – removes ASKLYZE database objects from the schema
-- `tables.sql`
-- `asklyze_cloud_connector_pkg.plb`
-- `asklyze_ui_pkg.sql`
-
-### APEX plug-in file
-
-The `plugin` folder contains the Oracle APEX region plug-in export file:
-
-- `region_type_plugin_asklyze_ai_plugin.sql`
+At no point does your actual data leave your environment. Only table/column metadata is shared with the AI to generate the query.
 
 ---
 
 ## Requirements
 
-- Oracle APEX environment
-- Access to the target schema
+- Oracle APEX (any modern version)
+- Access to the target schema with permission to create tables and packages
 - Permission to import plug-ins in the target APEX workspace/application
-- A valid ASKLYZE API key
+- A valid **ASKLYZE API key** — [get one at asklyze.ai](https://asklyze.ai)
 
 ---
 
 ## Installation
 
-### 1. Install the database objects
+### What's Included
 
-Install the database files first.
+After extracting the installation package you will find:
 
-#### Option A — SQL Scripts inside APEX
-
-1. Upload the files from the `database` folder into **SQL Scripts**
-2. Run:
-
-```sql
-install.sql
 ```
-
-#### Option B — SQLcl / SQL*Plus / command line
-
-Navigate to the `database` folder and run:
-
-```sql
-@install.sql
-```
-
-**Important:**  
-Run `install.sql` from inside the `database` folder so all referenced files are resolved correctly.
-
----
-
-### 2. Import the region plug-in
-
-After database installation is complete:
-
-1. Open the target Oracle APEX application
-2. Go to **Shared Components**
-3. Open **Plug-ins**
-4. Click **Import**
-5. Import:
-
-```text
-plugin/region_type_plugin_asklyze_ai_plugin.sql
+asklyze/
+├── database/
+│   ├── install.sql                              ← Run this first
+│   ├── deinstall.sql                            ← Removes all ASKLYZE objects
+│   ├── tables.sql
+│   ├── asklyze_cloud_connector_pkg.plb
+│   └── asklyze_ui_pkg.sql
+└── plugin/
+    └── region_type_plugin_asklyze_ai_plugin.sql ← Import into APEX
 ```
 
 ---
 
-### 3. Configure the API key
+### Step 1 — Install the Database Objects
 
-After importing the plug-in:
+Run `install.sql` from inside the `database/` folder so all referenced scripts resolve correctly.
 
-1. Open the ASKLYZE plug-in settings
+**Option A — SQL Scripts inside APEX**
+
+1. Upload all files from the `database/` folder into **SQL Scripts**
+2. Run `install.sql`
+
+**Option B — SQLcl / SQL\*Plus / Command Line**
+
+```bash
+cd database
+sqlcl your_user/your_password@your_db @install.sql
+```
+
+> ⚠️ **Important:** Always run `install.sql` from within the `database/` folder, not from the parent directory.
+
+---
+
+### Step 2 — Import the Region Plug-in
+
+1. Open your target Oracle APEX application
+2. Navigate to **Shared Components → Plug-ins**
+3. Click **Import**
+4. Select and import:
+
+   ```
+   plugin/region_type_plugin_asklyze_ai_plugin.sql
+   ```
+
+---
+
+### Step 3 — Configure the API Key
+
+1. Open the **ASKLYZE** plug-in in Shared Components
 2. Locate the **API Key** attribute
 3. Enter your ASKLYZE API key
-4. Save the changes
+4. Save
+
+> Don't have an API key yet? [Register at asklyze.ai](https://asklyze.ai)
 
 ---
 
-### 4. Add ASKLYZE to a page
+### Step 4 — Add ASKLYZE to a Page
 
-1. Create or open the page where ASKLYZE will be used
+1. Open (or create) the page where ASKLYZE will live
 2. Create a new **Region**
-3. Select **ASKLYZE AI [Plug-in]**
+3. Set the region type to **ASKLYZE AI [Plug-in]**
 4. Save the page
 
-#### Recommended templates
+**Recommended page settings for best results:**
 
-For the best layout:
-
-- **Page Template:** `Minimal (No Navigation)`
-- **Region Template:** `Blank with Attributes (No Grid)`
+| Setting | Recommended Value |
+|---|---|
+| Page Template | `Minimal (No Navigation)` |
+| Region Template | `Blank with Attributes (No Grid)` |
 
 ---
 
-### 5. Run the page and test the connection
+### Step 5 — Test the Connection
 
 1. Run the page in the browser
-2. Start the ASKLYZE connection test
-3. Confirm the page loads successfully before testing connectivity
+2. Start the **ASKLYZE Connection Test** from the interface
+3. Confirm the connection status shows as successful
 
-**Important:**  
-The page must be opened successfully so the connection with the ASKLYZE server can be established correctly.
+> ⚠️ **Important:** The page must load successfully in the browser before the connection test will work. The plug-in establishes its link with the ASKLYZE server on page load.
 
 ---
 
-### 6. Configure data access
+### Step 6 — Configure Data Access
 
-After the connection test succeeds:
+Once connected:
 
-1. Open **Data Configuration**
-2. Select the schemas and tables ASKLYZE should work with
+1. Open **Data Configuration** inside the ASKLYZE interface
+2. Select the **schemas** and **tables** ASKLYZE is allowed to query
 3. Save the configuration
 
-Only the selected tables will be available to ASKLYZE.
+Only the tables you explicitly select will be available to ASKLYZE. Everything else in your database remains invisible to the AI.
 
 ---
 
-## Quick start
+## Quick Start Summary
 
-1. Extract the installation files
-2. Run `database/install.sql`
-3. Import `plugin/region_type_plugin_asklyze_ai_plugin.sql`
-4. Enter the API key
-5. Add **ASKLYZE AI [Plug-in]** to a page
-6. Use the recommended page and region templates
-7. Run the page
-8. Test the connection
-9. Configure the tables ASKLYZE can access
+```
+1. Extract the installation package
+2. Run  database/install.sql
+3. Import  plugin/region_type_plugin_asklyze_ai_plugin.sql  into your APEX application
+4. Enter your API key in the plug-in settings
+5. Add the ASKLYZE AI [Plug-in] region to a page
+6. Apply the recommended page and region templates
+7. Run the page and complete the connection test
+8. Open Data Configuration and select your allowed tables
+9. Start asking questions
+```
+
+---
+
+## Security & Data Privacy
+
+ASKLYZE is designed with enterprise data security as a core requirement, not an afterthought.
+
+- **Your data stays in your database.** ASKLYZE never transfers, copies, or stores your actual records.
+- **Schema whitelisting.** You explicitly choose which tables the AI can query. No table you haven't approved will ever be touched.
+- **Metadata only.** When generating SQL, only table names and column names are sent to the AI — not data values.
+- **Your Oracle credentials remain yours.** ASKLYZE connects through your existing Oracle APEX environment using your own database connection.
 
 ---
 
 ## Uninstall
 
-To remove ASKLYZE from the schema, run:
+To completely remove ASKLYZE from your schema:
 
-```text
-database/deinstall.sql
+```sql
+@database/deinstall.sql
 ```
 
-**Warning:**  
-This permanently removes ASKLYZE tables and packages from the schema.
+> ⚠️ **Warning:** This permanently removes all ASKLYZE tables, packages, and configuration data from the schema. This action cannot be undone.
+
+To remove the plug-in from an APEX application, delete it from **Shared Components → Plug-ins**.
 
 ---
 
 ## Support
 
-For installation, onboarding, or configuration help:
+If you run into any issues during installation or configuration:
 
-- Website: https://asklyze.ai
-- Email: support@asklyze.ai
-- GitHub Issues: https://github.com/APEX-Experts/asklyze/issues
+| Channel | Link |
+|---|---|
+| 📖 Documentation | [asklyze.ai](https://asklyze.ai) |
+| 📧 Email Support | [support@asklyze.ai](mailto:support@asklyze.ai) |
+| 🐛 Bug Reports | [GitHub Issues](https://github.com/APEX-Experts/asklyze/issues) |
+
+When reporting a bug, please include your Oracle APEX version, the contents of any error messages, and the steps to reproduce the issue.
+
+---
+
+<p align="center">
+  Built by <a href="https://github.com/APEX-Experts">APEX Experts</a> · <a href="https://asklyze.ai">asklyze.ai</a>
+</p>
