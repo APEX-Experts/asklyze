@@ -1,5 +1,20 @@
 # ASKLYZE
 
+<p align="center">
+  <img src="https://imagedelivery.net/lTxZgYILFzqBTIG5m0i9uA/2abe72ea-dac2-4992-2644-910c5ca84500/public"
+       alt="ASKLYZE Logo"
+       width="220">
+</p>
+
+<p align="center"><strong>Transform Oracle APEX into an AI-powered analytics experience.</strong></p>
+
+<p align="center">
+  <a href="https://customer-nd6eq88q2tb3xwgl.cloudflarestream.com/6751079fa304be597c3140e0ed900d9a/iframe?preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-nd6eq88q2tb3xwgl.cloudflarestream.com%2F6751079fa304be597c3140e0ed900d9a%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false">
+    <img src="https://customer-nd6eq88q2tb3xwgl.cloudflarestream.com/6751079fa304be597c3140e0ed900d9a/thumbnails/thumbnail.jpg?height=600"
+         alt="ASKLYZE Demo Video"
+         width="900">
+  </a>
+</p>
 **Transform Oracle APEX into an AI-powered analytics experience.**
 
 ASKLYZE is a commercial Oracle APEX region plug-in that brings natural language analytics and AI-powered data exploration into Oracle APEX applications, while keeping customer data inside their own environment.
