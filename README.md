@@ -18,11 +18,10 @@
 <br>
 
 <p align="center">
-  <a href="https://customer-nd6eq88q2tb3xwgl.cloudflarestream.com/6751079fa304be597c3140e0ed900d9a/iframe?preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-nd6eq88q2tb3xwgl.cloudflarestream.com%2F6751079fa304be597c3140e0ed900d9a%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false">
+  <a href="https://customer-nd6eq88q2tb3xwgl.cloudflarestream.com/6751079fa304be597c3140e0ed900d9a/watch">
     <img src="https://customer-nd6eq88q2tb3xwgl.cloudflarestream.com/6751079fa304be597c3140e0ed900d9a/thumbnails/thumbnail.jpg?height=600"
-         alt="▶ Watch the ASKLYZE Demo"
-         width="900"
-         style="border-radius:12px;">
+         alt="ASKLYZE Demo Video — Dashboard Builder"
+         width="900">
   </a>
   <br>
   <sub>▶ Click to watch the demo</sub>
