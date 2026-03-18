@@ -18,13 +18,9 @@
 <br>
 
 <p align="center">
-  <a href="https://customer-nd6eq88q2tb3xwgl.cloudflarestream.com/6751079fa304be597c3140e0ed900d9a/watch">
-    <img src="https://customer-nd6eq88q2tb3xwgl.cloudflarestream.com/6751079fa304be597c3140e0ed900d9a/thumbnails/thumbnail.jpg?height=600"
-         alt="ASKLYZE Demo Video — Dashboard Builder"
-         width="900">
-  </a>
-  <br>
-  <sub>▶ Click to watch the demo</sub>
+  <img src="https://raw.githubusercontent.com/APEX-Experts/asklyze/main/asklyze-demo.gif"
+       alt="ASKLYZE Demo — Dashboard Builder"
+       width="900">
 </p>
 
 ---
