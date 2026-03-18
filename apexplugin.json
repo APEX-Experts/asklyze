@@ -8,7 +8,7 @@
     "url": "https://github.com/APEX-Experts/asklyze/issues",
     "email": "support@asklyze.ai"
   },
-  "license": "Commercial",
+  "license": "MIT",
   "commercial": "Yes",
   "author": {
     "name": "APEX Experts AI Solutions",
@@ -26,7 +26,7 @@
       "plugin": {
         "internalName": "ASKLYZE_AI_PLUGIN",
         "type": "region",
-        "demo": "https://g64534a1113c35c-customer.adb.me-riyadh-1.oraclecloudapps.com/ords/r/customer/asklyze-demo/login",
+        "demo": "https://asklyze.ai",
         "previewImage": "https://raw.githubusercontent.com/APEX-Experts/asklyze/main/asklyze-demo.gif"
       }
     }
